@@ -1,0 +1,51 @@
+body, html{
+    /* height: 500px; */
+    /* -moz-background-size: cover;
+  -o-background-size: cover; */
+    /* background-size: auto; */
+    height:100%;
+    margin:0;
+}
+
+
+.bg{
+    /* background-image: url(background-no-pic.png); */
+    background: linear-gradient(#A63697,#4F22BB);
+    height: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.signup{
+    color: white;
+    padding-bottom: 1000px;
+}
+
+.login-button{
+    background-color:#A63697;
+    border-radius:10px;
+    color:white;
+    /* border-color: white; */
+    border:solid 1px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+.login-button:hover{
+    background-color:#692560;
+}
+
+.metrodata-fest{
+    color:black;
+    font-family:'Poppins';
+    text-align:center;
+font-size: 30px;
+font-weight: 700;
+line-height: 96px;
+letter-spacing: 0em;  
+background-image: url(saxophone.png);
+}

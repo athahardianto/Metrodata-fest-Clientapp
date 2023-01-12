@@ -1,0 +1,64 @@
+p{
+    width: 0;
+    min-width: 100%;
+}
+
+.footer{
+    background-color: #0A075F;
+    padding-top:30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom:30px;
+    text-align: center;
+    color: white;
+    
+}
+
+.profile{
+    text-align: justify;
+   display: inline-block; 
+}
+
+.footer-desc{
+    font-family: 'Poppins';
+    font-size: 14px;
+    
+}
+.checkout{
+    background-color:deeppink;
+    border-radius:10px;
+    border-color: deeppink;
+    color:white;
+    border:solid 2px;
+    padding-top:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom:5px;
+}
+
+.checkout:hover{
+    opacity: 50%;
+}
+
+.button-back{
+    background-color: transparent;
+    color: black;
+    border-radius:10px;
+    border: solid 1px;
+    border-color: black;
+    padding-top:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom:5px;
+
+}
+
+.back{
+    margin-left: 30px;
+    color: black;
+    font-family:Poppins;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.drop-down { position: relative; display: inline-block; width: auto; margin-top: 0; font-family: verdana; } .drop-down select { display: none; } .drop-down .select-list { position: absolute; top: 0; left: 0; z-index: 1; margin-top: 40px; padding: 0; background-color: #595959; } .drop-down .select-list li { display: none; } .drop-down .select-list li span { display: inline-block; min-height: 40px; min-width: 280px; width: 100%; padding: 5px 15px 5px 35px; background-color: #595959; background-position: left 10px center; background-repeat: no-repeat; font-size: 16px; text-align: left; color: #FFF; opacity: 0.7; box-sizing: border-box; } .drop-down .select-list li span:hover, .drop-down .select-list li span:focus { opacity: 1; }

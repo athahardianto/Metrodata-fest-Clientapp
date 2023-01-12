@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.4.0/js/canvas-to-blob.min.js"></script>
+    </head>
+    <body >
+        <form th:action="@{/payments/upload/{id}(id=${payments.id})}" th:object="${payments}" th:method="POST" enctype="multipart/form-data">
+            
+            <input type="file" class="form-control" name="file"/>
+            <img id="display" src="" />
+            <br><br><button class="submit">Submit</button>
+        </form>
+        <!-- <div th:each="payments : ${paymentss}">
+        <img th:src="*{'data:image/jpeg;base64,'+{payments.image}}" alt="">
+                        </div>
+        <button class="result">ANJING</button> -->
+
+        <!-- <script>
+document.getElementById("upload").onchange = function (e) {
+  var file = document.getElementById("upload").files[0];
+  var reader = new FileReader();
+  reader.onload = function () {
+    console.log(reader.result);
+    document.getElementById("display").src = reader.result;
+    // image editing
+    // ...
+    var blob = window.dataURLtoBlob(reader.result);
+    console.log(
+      blob,
+      new File([blob], "image.png", {
+        type: "image/png"
+      })
+    );
+  };
+  reader.readAsDataURL(file);
+};
+
+        </script> -->
+
+    </body>
+</html>

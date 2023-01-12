@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Metrodata Fest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poly" />
+        <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+    
+    <body>
+<!-- COVER dan NAVIGATION BAR -->
+<nav id = "navbar" class="navbar navbar-expand-lg navbar-light" style="background: -webkit-linear-gradient(#4F22BB, transparent) 50%;
+color:white">
+   <div class="container-fluid">
+       <a class="navbar-brand fw-bolder" href="#" 
+       style="color:white;font-family:'Poppins';
+       font-style: normal;font-weight: 800;
+       font-size: 28.5px;line-height: 43px;">
+           <img src="/icon/saxophone.png"
+           width="25" height="25" alt=" ">&nbsp;MetrodataFest 
+       </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+           <div class="nav justify-content-end" >
+            <a class="nav-link" th:href="@{/home}" style="margin-top:5px;">Home</a>
+            <a class="nav-link" th:href="@{/tickets}" style="margin-top:5px;">Ticket</a>
+            <a class="nav-link" th:href="@{/lineup}" style="margin-top:5px;">Line Up</a>
+            <a class="nav-link" th:href="@{/news}" style="margin-top:5px;">News</a>
+            <a class="nav-link" th:href="@{/faqs}"style="margin-top:5px;">FAQ</a>
+            <a class="nav-link" href="#footer" style="margin-top:5px;">About Us</a>
+            <a class="nav-link" th:href="@{/payments}" style="margin-top:5px;">My Order</a>
+            <a class="nav-link" href="#">
+                <img src="/icon/user.png"
+                width="35" height="35">
+                </a>
+                <form class="nav-link" th:action="@{/logout}" th:method="POST">
+                    <button class="btn btn-outline-danger text-white">Logout</button>
+                </form>
+                   </div>
+       
+   </div>
+</div>
+</nav>
+
+        
+        <!-- NEWS -->
+        <div style="margin-left:200px;margin-right:200px;margin-top:100px">
+            <!-- <a style="color:#242565;font-family:'Poppins';font-weight:bold; font-size: 40px;">News<br></a> -->
+            <!-- <div class="news-inner"> -->
+                <img th:src="*{'data:image/jpeg;base64,'+{newss.image}}" alt="" style="text-align:center;">
+                <br><br><br><br><h1 class="news-title" th:text="${newss.title}"
+                ></h1><br>
+                <br><p class="news-detail" th:text="${newss.content}"
+                ></p><br>
+                <p class="news-maker" th:text="${newss.createAt}"
+                ></p><br><br><br></a>
+            <!-- </div> -->
+<!--         
+            <div class="news-inner">
+                <img src="C:\Users\khali\Documents\KULIAH\SMT 5\Full Stack Developer (MBKM)\Final Project\metrodatafest-frontend\frontend\src\main\resources\static\icon\rules.png">
+                <br><br><h1 class="news-title"
+                >Do's and Dont's in Metrodata Fest 2022
+                </h1><br>
+                <br><p class="news-desc"
+                >Before you attend the Metrodata Fest, make sure you folllow this rules down below.</p><br>
+                <p class="news-maker"
+                >10 Des - Admin</p><br>
+            </div>
+        
+            <div class="news-inner">
+                <img src="C:\Users\khali\Documents\KULIAH\SMT 5\Full Stack Developer (MBKM)\Final Project\metrodatafest-frontend\frontend\src\main\resources\static\icon\rules.png">
+                <br><br><h1 class="news-title"
+                >Do's and Dont's in Metrodata Fest 2022</h1><br>
+                <br><p class="news-desc"
+                >Before you attend the Metrodata Fest, make sure you folllow this rules down below.</p><br>
+                <p class="news-maker"
+                >10 Des - Admin</p><br>
+            </div> -->
+        
+        </div>
+
+        <!-- NEWS -->
+
+
+
+<!-- FOOTER -->
+<div id="footer" class="footer">
+    <div class="profile">
+        <div style=" font-size: 24px; 
+            font-family: 'Poppins'; font-weight: bold;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="/icon/saxophone.png"
+            width="20" height="20">&nbsp;MetrodataFest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        </div>
+        <p class="footer-desc"><br>
+            Festival Event by Metrodata Academy. 
+            This webpage is only a 
+            dummy for web development project assignment. <br>
+        </p>
+        <div style="text-align:center;border-left:10px;border-right: 10px;">
+            <a href=""><img src="/icon/facebook.png"></a>
+            <a href=""><img src="/icon/twitter.png"></a>
+            <a href="https://www.instagram.com/metrodataacademy/"><img src="/icon/ig.png"></a>
+        </div>
+    </div>
+
+    <hr style="color:white;
+    background-color:white;
+    margin-left:50px;margin-right: 50px;
+    margin-bottom:15px;height:2px;border-width: 0;">
+    <div style="
+    font-family:'Poppins';font-size:14px;color:#FEFEFE">
+        Copyright © 2022 Metrodata Fest
+    <br></div>
+</div>
+<!-- END OF FOOTRER -->
+
+
+
+        <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+<!-- JS DataTables CDN -->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js">
+</script>
+
+<!-- SweetAlert2 CDN -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="/js/home.js"></script>
+    
+    </body>
+</html>
+

@@ -1,0 +1,417 @@
+.nav-link{
+    color:white;
+    font-family:'DM Sans';
+    font-size:16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.first-fold{
+    background-image: url(background.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    /* height: 500px; */
+    background-size: cover;
+}
+
+.button-login{
+    background-color:transparent;
+    color:white;
+    border-color:white;
+    border-radius: 15px;
+    border:solid 2px;
+    margin-top:-3px;
+}
+
+.button-login:hover{
+    background-color:white;
+    border-color:white;
+    color:blueviolet
+}
+
+.a-festival-by{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:white;
+    padding-top: 50px;
+}
+.metrodata-academy{
+    font-family: 'Poly';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:white;
+}
+.metrodata-fest{
+    color:white;
+    font-family:'Poppins';
+    text-align:center;
+font-size: 64px;
+font-weight: 700;
+line-height: 96px;
+letter-spacing: 0em;  
+
+}
+.date{
+    color:white;
+    font-family: 'Poppins';
+font-size: 32px;
+font-weight: 400;
+line-height: 42px;
+letter-spacing: 0em;
+text-align: center;
+padding-bottom: 30px;
+}
+
+.dua-tombol{
+    font-family:'DM Sans';
+    text-align:center;
+    font-style: normal;
+}
+
+.tombol-get-ticket{
+    
+    border-color:#F5167E;
+    border-radius: 25px;
+    border:solid 2px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin:20px;
+    margin-bottom: 400px;
+    background-color:#F5167E;
+    color:white;
+}
+.tombol-faq{
+    color:white;
+    border-color:white;
+    border-radius: 25px;
+    border:solid 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin:20px;
+    margin-bottom: 400px;
+    background-color:transparent;
+}
+
+.tombol-faq:hover{
+    color:white;
+    border-radius: 25px;
+    border:solid 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin:20px;
+    margin-bottom: 400px;
+    background-color:#F5167E;
+}
+
+.lineup-top{
+    background: -webkit-linear-gradient(#A63697,#4F22BB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Poppins';
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 72px;
+            letter-spacing: 0em;
+            text-align: center;
+            border-bottom:50px;
+            position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line-up{
+    text-align:center;
+}
+.lineup{
+    text-align: center;
+    color: black;
+    font-family:'Poppins';
+    font-size: 32px;
+    border-bottom:40px;
+    font-weight: 500;
+    font-style: bold;
+    display: inline-block;
+}
+
+.learn{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.learn-more{
+    text-align: center;
+    color:#4F22BB;
+    border-color:#4F22BB;
+    /* border:solid 2px; */
+    font-size: 20px;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:white;
+    
+}
+
+.learn-more:hover{
+    text-align: center;
+    color:white;
+    border-color:#white;
+    background:linear-gradient(#A63697,#4F22BB);
+    font-size: 20px;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.news{
+    text-align:center;
+    margin-top: 80px;
+}
+
+.news-inner{
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: inline-block;}
+
+h1{
+    width: 0;
+    min-width: 100%;
+    text-align:left;
+}
+
+p{
+    width: 0;
+    min-width: 100%;
+}
+
+.news-title{
+    text-align:left;
+    color: #242565;
+    font-family:'DM Sans'; 
+    font-weight:bold;
+    font-size:20px;
+    max-height: 20px;
+    overflow: hidden;
+}
+
+.news-desc{
+    text-align:left;
+font-family:'DM Sans'; 
+font-size:16px; 
+color:black;
+max-height: 48px;
+overflow: hidden;
+}
+
+.news-detail{
+    text-align:left;
+font-family:'DM Sans'; 
+font-size:16px; 
+color:black;
+}
+
+.news-maker{
+    font-family:'DM Sans'; 
+font-size:14px; 
+color:#A5A5A5;
+max-height: 16px;
+overflow: hidden;
+
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.search-bar{
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 2px solid currentColor;
+    border-radius: 25px;
+    margin-right:60px;
+}
+
+input[type="search"]{
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+    color: #bbb;
+  }
+
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url(search.png) no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+
+  button[type="submit"]:focus,
+  input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+  }
+
+.question{
+    background: linear-gradient(#A63697,#4F22BB);
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top:40px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.answer{
+    background: white;
+    color: black;
+    border:solid 2px #4F22BB;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom:20px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.footer{
+    background-color: #0A075F;
+    padding-top:30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom:30px;
+    text-align: center;
+    color: white;
+    
+}
+
+.profile{
+    text-align: justify;
+   display: inline-block; 
+}
+
+.footer-desc{
+    font-family: 'Poppins';
+    font-size: 14px;
+    
+}
+
+.col-2{
+    background: linear-gradient(#A63697,#4F22BB);
+    color: white;
+    font-weight: bold;
+}
+
+.align-right {
+    text-align: right;
+    border: 0;
+    width:40%;
+  }
+
+.checkout{
+    background-color:rgb(79, 81, 213);
+    border-radius:10px;
+    border-color: rgb(79, 81, 213);
+    color:white;
+    border:solid 2px;
+    padding-top:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom:5px;
+    font-weight: bold;
+}
+.cancel{
+    background-color:transparent;
+    border-radius:10px;
+    border-color: rgb(199, 57, 57);
+    color:rgb(199, 57, 57);
+    border:solid 2px;
+    padding-top:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom:5px;
+    /* font-weight: bold; */
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
